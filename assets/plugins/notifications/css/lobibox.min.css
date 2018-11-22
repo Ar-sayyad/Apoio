@@ -708,7 +708,7 @@ body.lobibox-open {
 }
 
 .lobibox-notify-wrapper.top {
-	top: 0
+	top: 10px;
 }
 
 .lobibox-notify-wrapper.left {
@@ -717,8 +717,8 @@ body.lobibox-open {
 }
 
 .lobibox-notify-wrapper.right {
-	right: 0;
-	margin-left: 0
+	right: 20px;
+	margin-left: 0;
 }
 
 .lobibox-notify-wrapper.right .lobibox-notify {

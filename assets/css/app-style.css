@@ -1,42 +1,3 @@
-/*
-Template Name: Rocker Admin
-Author: CODERVENT
-Email: codervent@gmail.com
-File: app-style
-*/
-
-/*
-  - Google Font
-  - General
-  - Menu Sidebar Wrapper
-  - Page Content Wrapper
-  - Topbar Header
-  - Dropdown Menu
-  - User Details
-  - Logo
-  - SearachBar
-  - Cards
-  - Modals
-  - Buttons
-  - User Cards
-  - Widgets
-  - Forms
-  - Tables
-  - Alerts
-  - Badges
-  - Paginations
-  - List Groups
-  - Nav Tabs & Pills
-  - Accordions
-  - Background Colors
-  - Borders
-  - Text colors
-  - Shadows
-  - CheckBoxes & Radios
-  - Pricing Tables
-  - Responsive
-*/
-
 /* Google Font*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
@@ -420,20 +381,19 @@ hr {
 
 .logo-text{
 	color: #223035;
-	font-size: 18px;
+	font-size: 20px;
 	display: inline-block;
 	position: relative;
-    top: 3px;
-    letter-spacing: 2px;
-	font-weight: 400;
+	top: 3px;
+	letter-spacing: 2px;
+	font-weight: 600;
 	text-align: center;
 	line-height:50px;
-
 }
 
 .logo-icon{
-    margin-left: 20px;
-    width: 40px;
+    margin-left: 0px;
+    width: 100%;
 }
 
 /* SearachBar */
@@ -644,9 +604,9 @@ hr {
 	letter-spacing: 1px;
 	padding: 10px 20px;
 	margin: 5px;
-	border-radius: .25rem;
+	border-radius: 2px;
 	text-transform: uppercase;
-	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+	box-shadow: 0 0.125rem 0.25rem #495057;
 }
 .btn:focus{
 	box-shadow:none;
@@ -721,15 +681,26 @@ hr {
 	box-shadow:none;
 }
 
+.btn-success_light {
+	color: #fff;
+	background-color: #0da613;
+	border-color: #0da613;
+}
+.btn-success_light:hover {
+	color: #fff;
+	background-color: #217925;
+	border-color: #217925;
+}
+
 .btn-success {
 	color: #fff;
 	background-color: #15ca20;
-	border-color: #15ca20
+	border-color: #15ca20;
 }
 .btn-success:hover {
 	color: #fff;
 	background-color: #218838;
-	border-color: #1e7e34
+	border-color: #1e7e34;
 }
 .btn-success.focus, .btn-success:focus {
 	box-shadow:none;
@@ -2131,8 +2102,8 @@ hr {
     color: #ff0000;
 }
 label {
-    color: #6b6b6b;
-    font-size: .75rem;
+    color: #212529;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -4385,18 +4356,18 @@ form.striped-rows .form-group {
 
 
 [type=checkbox]:checked, [type=checkbox]:not(:checked) {
-    /* position: absolute; */
+    position: absolute;
     left: -9999px;
     /* opacity: 0; */
 }
 [type=checkbox]+label {
     font-weight: 400;
     position: relative;
-    padding-left: 35px !important;
+    padding-left: 25px !important;
     cursor: pointer;
     display: inline-block;
     height: 20px;
-    line-height: 20px;
+    line-height: 25px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -4407,10 +4378,10 @@ form.striped-rows .form-group {
     position: absolute;
     top: 0;
     left: 0;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     z-index: 0;
-    border: 2px solid #5a5a5a;
+    border: 2px solid #212529;
     border-radius: 1px;
     margin-top: 2px;
     -webkit-transition: .2s;
@@ -4438,14 +4409,14 @@ form.striped-rows .form-group {
     background-color: rgba(0, 0, 0, .1);
 }
 [type=checkbox]:checked+label:before {
-    top: -4px;
+    top: -3px;
     left: -5px;
-    width: 12px;
-    height: 22px;
+    width: 10px;
+    height: 20px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
-    border-right: 2px solid #45aef1;
-    border-bottom: 2px solid #45aef1;
+    border-right: 2px solid #212529;
+    border-bottom: 3px solid #212529;
     -webkit-transform: rotate(40deg);
     -ms-transform: rotate(40deg);
     transform: rotate(40deg);
@@ -4453,7 +4424,8 @@ form.striped-rows .form-group {
     backface-visibility: hidden;
     -webkit-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%}
+    transform-origin: 100% 100%;
+    }
 [type=checkbox]:checked:disabled+label:before {
     border-right: 2px solid rgba(0, 0, 0, .26);
     border-bottom: 2px solid rgba(0, 0, 0, .26);
@@ -4583,9 +4555,9 @@ form.striped-rows .form-group {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 10px;
-    width: 16px;
-    height: 16px;
+    margin: 12px;
+    width: 18px;
+    height: 18px;
     z-index: 0;
     -webkit-transition: .28s ease;
     -o-transition: .28s ease;
@@ -4594,7 +4566,7 @@ form.striped-rows .form-group {
 [type=radio].with-gap:checked+label:after, [type=radio].with-gap:checked+label:before, [type=radio]:checked+label:after, [type=radio]:checked+label:before, [type=radio]:not(:checked)+label:after, [type=radio]:not(:checked)+label:before {
     border-radius: 50%}
 [type=radio]:not(:checked)+label:after, [type=radio]:not(:checked)+label:before {
-    border: 2px solid #5a5a5a;
+    border: 2px solid #f8f9fa;
 }
 [type=radio]:not(:checked)+label:after {
     z-index: -1;
@@ -4608,10 +4580,10 @@ form.striped-rows .form-group {
     animation: ripple .2s linear forwards;
 }
 [type=radio].with-gap:checked+label:after, [type=radio].with-gap:checked+label:before, [type=radio]:checked+label:after {
-    border: 2px solid #389af0;
+    border: 2px solid #f8f9fa;
 }
 [type=radio].with-gap:checked+label:after, [type=radio]:checked+label:after {
-    background-color: #212529;
+    background-color: #f8f9fa;
     z-index: 0;
 }
 [type=radio]:checked+label:after {

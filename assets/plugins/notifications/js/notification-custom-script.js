@@ -314,40 +314,53 @@
 		  }
                   
                   function successmsg($msg){
-			Lobibox.notify('success', {
+                    Lobibox.notify('success', {
 		    pauseDelayOnHover: true,
-            continueDelayOnInactiveTab: false,
-		    position: 'center top',
-		    showClass: 'zoomIn',
-            hideClass: 'zoomOut',
-            icon: 'fa fa-check-circle',
-            width: 500,
+                    continueDelayOnInactiveTab: false,
+                    size: 'mini',
+                    rounded: true,
+		    delayIndicator: false,
+                    position: 'top right',
+                    icon: 'fa fa-check-circle',
 		    msg: $msg
 		    });
 		  }
                   
                    function errormsg($msg){
-			Lobibox.notify('error', {
+                    Lobibox.notify('error', {
 		    pauseDelayOnHover: true,
-            continueDelayOnInactiveTab: false,
-            icon: 'fa fa-times-circle',
-		    position: 'center top',
-		    showClass: 'zoomIn',
-            hideClass: 'zoomOut',
-            width: 500,
+                    continueDelayOnInactiveTab: false,
+                    size: 'mini',
+                    rounded: true,
+		    delayIndicator: false,
+                    icon: 'fa fa-times-circle',
+		    position: 'top right',
+		    msg: $msg
+		    });
+		  }
+                  
+                   function removemsg($msg){
+                    Lobibox.notify('info', {
+		    pauseDelayOnHover: true,
+                    continueDelayOnInactiveTab: false,
+                    size: 'mini',
+                    rounded: true,
+		    delayIndicator: false,
+                    icon: 'fa fa-times-circle',
+		    position: 'top right',
 		    msg: $msg
 		    });
 		  }
                   
                   function warningmsg($msg){
-			Lobibox.notify('warning', {
+                    Lobibox.notify('warning', {
 		    pauseDelayOnHover: true,
-            continueDelayOnInactiveTab: false,
-            icon: 'fa fa-exclamation-circle',
-		    position: 'center top',
-		    showClass: 'zoomIn',
-            hideClass: 'zoomOut',
-            width: 500,
+                    continueDelayOnInactiveTab: false,
+                    size: 'mini',
+                    rounded: true,
+		    delayIndicator: false,
+                    icon: 'fa fa-exclamation-circle',
+		    position: 'top right',
 		    msg: $msg
 		    });
 		  }

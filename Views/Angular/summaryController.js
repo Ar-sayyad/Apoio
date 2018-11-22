@@ -1,3 +1,4 @@
 app.controller("summaryController", ['$scope', function ($scope) {
-    $scope.msg = 'Hello';
+    $scope.pagename = "DASHBOARD AND MAPS";
+    $scope.divname = "DATA INPUTS";
 }]);
