@@ -71,6 +71,7 @@ app.controller('masterController', function ($scope) {
         $("#attributesListLeft").empty();
         $(".tableAttributes").empty();
         $("#cellGraphList").empty();
+        $("#elementChildList").empty();
         $(".tabDiv").show();
         var WebId = $("#elementList").val();
 

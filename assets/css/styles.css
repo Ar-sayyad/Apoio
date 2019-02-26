@@ -702,6 +702,6 @@ th {
 }
 #childDiv{
         margin-top: 290px;
-        border-top: 1px dashed #75808a;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
         padding: 5px;
 }
