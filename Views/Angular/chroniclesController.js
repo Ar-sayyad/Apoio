@@ -248,7 +248,7 @@ function loadEventFrames() {
                                 style: {
                                     color: eventsColorsData[key].color
                                 },
-                                enabled: !0
+                                enabled: !1
                             }
                         });
                     }
