@@ -1,0 +1,99 @@
+<header class="topbar-nav">
+    <nav class="navbar navbar-expand bg-white">
+        <h4>{{pagename}}</h4>    
+    </nav>
+</header>
+<div class="content-wrapper">
+    <div class="container-fluid">
+      <!--Start Dashboard Content-->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">  
+                        <label>Select Zone :</label>
+                        <select id="parentTemplateList" onchange="getData();"  style="width:95%;" class="form-control">
+                            <option value="" selected="" disabled="">---Select Zone---</option>
+                        </select>                 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <label>Select Type of Asset:</label>
+                        <select id="blockList"  onchange="getData();" style="width:95%;" class="form-control">
+                            <option value="CELL">CELL</option>
+                            <option value="PRODUCER">PRODUCER</option>
+                            <option value="TUZ">TUZ</option>
+                        </select>                 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">                           
+                        <label class="slect100">Select Date : </label>             
+                        <div class="slect100">
+                            <input type="text" class="dateTime form-control" onchange="getData();"  autocomplete="off"  data-date-format='yy-mm-dd' style="width:95%;"  id="todaysDate"  placeholder="Date Time">
+                        </div>
+                   </div>                
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body"> 
+                        <label>Select Parameter : </label>
+                        <select id="parameterList" onchange="loadTable();" style="width:95%;" class="form-control">
+                        </select>               
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-6">
+                             <div class="card tbleContainer">
+                                 <div class="card-body">
+                                      <div class="table-responsive" id="topTable"></div>
+                                 </div>
+                             </div>
+                            <div class="card tbleContainer">
+                                 <div class="card-body">
+                                       <div class="table-responsive" id="bottomTable"></div>
+                                 </div>
+                             </div>                  
+            </div>
+            
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card filterContainer" >
+                    <div class="card-body">                         
+                        <div id="filterAdd">
+                             <button class="btn btn-primary" style="width:30%;" id="addExpress"><i class="ti-plus"></i> Add Expression </button>
+                             <div class="filtering" id="filtering1" style="border: 1px solid rgb(222, 226, 230);">
+                                 <select class="floatLeft form-control params" style="width:30%;" id="params1">
+                                     <option value="" selected="" disabled="">--Select Parameter--</option><option data-name="U" data-id="1" top-sort="desc" bottom-sort="asc" value="1">U</option><option data-name="PH" selected="selected" data-id="2" top-sort="asc" bottom-sort="desc" value="2">PH</option><option data-name="KU" data-id="3" top-sort="desc" bottom-sort="asc" value="3">KU</option><option data-name="PR" data-id="4" top-sort="desc" bottom-sort="asc" value="4">PR</option><option data-name="VR" data-id="5" top-sort="desc" bottom-sort="asc" value="5">VR</option></select>
+                                 <select class="floatLeft form-control operator" style="width:28%;" id="operator1">
+                                     <option value="" selected="" disabled="">--Select Operator--</option><option value="=">=</option><option selected="selected" value=">">&gt;</option><option value="<">&lt;</option><option value=">=">&gt;=</option><option value="<=">&lt;=</option></select>
+                                 <input type="text" autocomplete="off" style="width:15%;" onkeydown="getReload(event);" value="0" class="floatLeft form-control number" id="number1" placeholder="Number">
+                                 <button type="button" onclick="deleteParentElement(this,1);" class="floatLeft btn btn-default remove"><i class="ti-close"></i></button> 
+                             </div>
+                             <div class="filtering" id="filtering2" style="border: 1px solid rgb(222, 226, 230);">
+                                 <select class="floatLeft form-control params" style="width:30%;" id="params2">
+                                     <option value="" selected="" disabled="">--Select Parameter--</option><option data-name="U" data-id="1" top-sort="desc" bottom-sort="asc" value="1">U</option><option data-name="PH" selected="selected" data-id="2" top-sort="asc" bottom-sort="desc" value="2">PH</option><option data-name="KU" data-id="3" top-sort="desc" bottom-sort="asc" value="3">KU</option><option data-name="PR" data-id="4" top-sort="desc" bottom-sort="asc" value="4">PR</option><option data-name="VR" data-id="5" top-sort="desc" bottom-sort="asc" value="5">VR</option></select>
+                                 <select class="floatLeft form-control operator" style="width:28%;" id="operator2">
+                                     <option value="" selected="" disabled="">--Select Operator--</option><option value="=">=</option><option value=">">&gt;</option><option value="<">&lt;</option><option value=">=">&gt;=</option><option selected="selected" value="<=">&lt;=</option></select>
+                                 <input type="text" autocomplete="off" style="width:15%;" onkeydown="getReload(event);" value="2.5" class="floatLeft form-control number" id="number2" placeholder="Number">
+                                 <button type="button" onclick="deleteParentElement(this,2);" class="floatLeft btn btn-default remove"><i class="ti-close"></i></button> 
+                             </div>
+                        </div>
+                        <button class="btn btn-primary" id="reloadTable" style="float: right;"><i class="ti-reload"></i> Submit</button>  
+                    </div>
+                </div>
+            </div>                    
+        </div>
+      
+    <!--End Row-->
+    <!--End Dashboard Content-->
+    </div>  
+</div>

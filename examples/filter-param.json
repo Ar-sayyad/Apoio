@@ -1,0 +1,17 @@
+[
+    {
+        "index" : "U",
+        "operator": ">",
+        "value" : 100
+    },
+    {
+        "index" : "U",
+        "operator": "<",
+        "value" : 1000
+    },
+    {
+        "index" : "PH",
+        "operator": ">",
+        "value" : 7
+    }
+]

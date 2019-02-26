@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.9.5.8352" ExportMode="NoUniqueID" PISystem="BKZTKDSAS32" Created="2018-10-17T12:00:40.2379893Z" id="d57dee6b-faa5-4545-bf39-07941b21b29b" ParentKey="7b0faa35-160d-45ff-83a5-8eff4229515a" ExportedObject="Mass Flow Rate" ExportedType="UOMClass" Identity="UOMClass" PIPersist="197 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{90c79510-6903-4194-b55c-094bc7d7e69e}\UOMDatabase\UOMClasses[{d57dee6b-faa5-4545-bf39-07941b21b29b}]*BKZTKDSAS32\UOMDatabase\UOMClasses[Mass Flow Rate]">
+  <UOMClass>
+    <Name>Mass Flow Rate</Name>
+    <CanonicalUOM>kilogram per second</CanonicalUOM>
+    <CanonicalAbbr>kg/s</CanonicalAbbr>
+    <UOMBaseClass>
+      <Name>Mass</Name>
+      <BasePower>1</BasePower>
+    </UOMBaseClass>
+    <UOMBaseClass>
+      <Name>Time</Name>
+      <BasePower>-1</BasePower>
+    </UOMBaseClass>
+  </UOMClass>
+  <UOM>
+    <Name>kilogram per second</Name>
+    <Abbreviation>kg/s</Abbreviation>
+    <UOMMapping UOMGroup="US Customary">lb/s</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>gram per second</Name>
+    <Abbreviation>g/s</Abbreviation>
+    <RefFactor>0.001</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lb/s</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>kilo pound per hour</Name>
+    <Abbreviation>klb/h</Abbreviation>
+    <RefFactor>0.125998</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>kilogram per day</Name>
+    <Abbreviation>kg/d</Abbreviation>
+    <RefFactor>1.157E-05</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>kilogram per hour</Name>
+    <Abbreviation>kg/h</Abbreviation>
+    <RefFactor>0.00027777777777777778</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>pound per second</Name>
+    <Abbreviation>lb/s</Abbreviation>
+    <RefFactor>0.45359237</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <UOMMapping UOMGroup="Metric">kg/s</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>long ton per day</Name>
+    <Abbreviation>lton/d</Abbreviation>
+    <RefFactor>0.0259259259259259</RefFactor>
+    <RefUOM>pound per second</RefUOM>
+    <UOMMapping UOMGroup="Metric">t/d</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>million pound per day</Name>
+    <Abbreviation>MMlb/d</Abbreviation>
+    <RefFactor>11.5740740740741</RefFactor>
+    <RefUOM>pound per second</RefUOM>
+    <UOMMapping UOMGroup="Metric">t/d</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>short ton per day</Name>
+    <Abbreviation>ston/d</Abbreviation>
+    <RefFactor>0.0231481481481481</RefFactor>
+    <RefUOM>pound per second</RefUOM>
+    <UOMMapping UOMGroup="Metric">t/d</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>tonne per hour</Name>
+    <Abbreviation>t/h</Abbreviation>
+    <RefFactor>0.2778</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>short ton per hour</Name>
+    <Abbreviation>ston/h</Abbreviation>
+    <RefFactor>0.9072</RefFactor>
+    <RefUOM>tonne per hour</RefUOM>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>thousand pound per day</Name>
+    <Abbreviation>klb/d</Abbreviation>
+    <RefFactor>0.0115740740740741</RefFactor>
+    <RefUOM>pound per second</RefUOM>
+    <UOMMapping UOMGroup="Metric">t/d</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+  <UOM>
+    <Name>tonne per day</Name>
+    <Abbreviation>t/d</Abbreviation>
+    <RefFactor>0.0115740740740741</RefFactor>
+    <RefUOM>kilogram per second</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lton/d</UOMMapping>
+    <Class>Mass Flow Rate</Class>
+  </UOM>
+</AF>

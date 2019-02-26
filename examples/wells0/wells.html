@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <title locale-id="page_title">Well Field Management Portal</title>
+    
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="kapp-wells.css" />
+
+
+    <script type="text/javascript">
+
+      if (!(typeof(kApp.params.w_template) === 'string')) kApp.params.w_template = 'tuz';
+      if (!(typeof(kApp.params.w_asset) === 'string')) kApp.params.w_asset = 'TSU45';
+
+      $(function(){
+
+        kApp.setAlertContainer('alertContainer');
+        kApp.wells.$lstParents = $('#lstParents');
+        kApp.wells.$lstAssets = $('#lstAssets');
+        kApp.wells.$lstElements = $('#lstElements');
+        kApp.wells.$chart = $('#chart');
+
+        kApp.wells.initElementList();
+        kApp.wells.initChart();
+
+        // kApp.pi.piBatchQuery({
+        //   'data': { Method: 'GET', Resource: 'https://bkztkdsas31.bdom.ad.corp/piwebapi/streams/P1AbE' + window.btoa('BKZTKDSAS32\\DEM\\BLOCKS\\TSU45|KU').replace(/=/gi, '') + '/interpolated?starttime=t-30mo&endtime=t&interval=1w&selectedfields=items.value;items.timestamp' }
+        // }, function(data) {
+          
+        //   console.log(data);
+
+        //   kApp.pi.parseBatchResult(data.data, 'Failed to load data', function(item) {
+        //     conf.data.datasets[0].data.push({ x: moment(item.Timestamp), y: item.Value });
+        //   })
+
+        // });
+
+        kApp.wells.loadParentList(kApp.params.w_template, kApp.params.w_asset, $('#lstAssets'));
+
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <!-- <div class="kLoader"><div></div></div> -->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span><img src="/Logo_Katko.png" style="width:40px;" alt="logo" />&nbsp;&nbsp;&nbsp;<span locale-id="page_title">Katco/DEM Portal</span></span></a>
+        </div>
+        <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse"></ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid kContent">
+      
+      <div id="alertContainer"></div>
+
+      <div class="row">
+
+        <div class="col-xs-2">
+          
+          <label for="lstTemplates" locale-id="tuz_select">Select parent type:</label>
+          <select class="form-control" id="lstTemplates">
+            <option template="tuz">TUZ</option>
+          </select>
+          
+          <label for="lstParents" locale-id="tuz_select">Select a parent:</label>
+          <!--input id="filter2" placeholder="Filter" class="form-control"-->
+          <select class="form-control" id="lstParents"></select>
+          
+          <label for="lstElements">Elements</label>
+          <div class="selectable-wrapper">
+            <ul id="lstElements"></ul>
+          </div>
+          
+          <label for="lstAssets">Assets</label>
+          <div class="selectable-wrapper"><ul id="lstAssets"></ul></div>
+
+        </div>
+
+        <div class="col-xs-10">
+
+          <ul id="tabNav" class="nav nav-tabs nav-justified">
+            <li class="active">
+              <a href="#tabChart" data-toggle="tab" aria-expanded="false">Charts</a>
+            </li>
+            <li>
+              <a href="#tabData" data-toggle="tab" aria-expanded="false">Data</a>
+            </li>
+          </ul>
+          
+          <div id="tabContent" class="tab-content">
+            <div id="tabChart">
+              <canvas id="chart" style="width:100%;"></canvas>
+            </div>
+            <div id="tabData">
+  
+            </div>
+          </div>
+
+        </div>
+      
+        
+      </div>
+    </div>
+
+    <footer class="kFooter">
+    </footer>
+
+  </body>
+</html>
+

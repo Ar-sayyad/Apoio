@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.9.5.8352" ExportMode="NoUniqueID" PISystem="BKZTKDSAS32" Created="2018-10-17T12:01:37.7049893Z" id="09b4d43e-1892-4c4c-a4c9-c70c1f26bb95" ParentKey="7b0faa35-160d-45ff-83a5-8eff4229515a" ExportedObject="Density" ExportedType="UOMClass" Identity="UOMClass" PIPersist="190 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{90c79510-6903-4194-b55c-094bc7d7e69e}\UOMDatabase\UOMClasses[{09b4d43e-1892-4c4c-a4c9-c70c1f26bb95}]*BKZTKDSAS32\UOMDatabase\UOMClasses[Density]">
+  <UOMClass>
+    <Name>Density</Name>
+    <CanonicalUOM>kilogram per cubic meter</CanonicalUOM>
+    <CanonicalAbbr>kg/m3</CanonicalAbbr>
+    <UOMBaseClass>
+      <Name>Length</Name>
+      <BasePower>-3</BasePower>
+    </UOMBaseClass>
+    <UOMBaseClass>
+      <Name>Mass</Name>
+      <BasePower>1</BasePower>
+    </UOMBaseClass>
+  </UOMClass>
+  <UOM>
+    <Name>kilogram per cubic meter</Name>
+    <Abbreviation>kg/m3</Abbreviation>
+    <UOMMapping UOMGroup="US Customary">lb/ft3</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>gram per cubic centimeter</Name>
+    <Abbreviation>g/cm3</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>gram per liter</Name>
+    <Abbreviation>g/L</Abbreviation>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lb/US gal</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>gram per milliliter</Name>
+    <Abbreviation>g/mL</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>kilogram per liter</Name>
+    <Abbreviation>kg/L</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lb/US gal</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>miligram per liter</Name>
+    <Abbreviation>mg/L</Abbreviation>
+    <RefFactor>0.001</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>pound per barrel</Name>
+    <Abbreviation>lb/bbl</Abbreviation>
+    <RefFactor>2.85301017421182</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="Metric">kg/m3</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>pound per cubic foot</Name>
+    <Abbreviation>lb/ft3</Abbreviation>
+    <RefFactor>16.0184633739601</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="Metric">kg/m3</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>pound per US gallon</Name>
+    <Abbreviation>lb/US gal</Abbreviation>
+    <RefFactor>119.826427316897</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="Metric">kg/L</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>tonne per cubic meter</Name>
+    <Abbreviation>t/m3</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lb/ft3</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+  <UOM>
+    <Name>tonne per liter</Name>
+    <Abbreviation>t/L</Abbreviation>
+    <RefFactor>1000000</RefFactor>
+    <RefUOM>kilogram per cubic meter</RefUOM>
+    <UOMMapping UOMGroup="US Customary">lb/ft3</UOMMapping>
+    <Class>Density</Class>
+  </UOM>
+</AF>

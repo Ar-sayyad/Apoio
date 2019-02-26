@@ -43,16 +43,17 @@
 	padding: 13px 5px 13px 15px;
 	display: block;
 	border-left: 3px solid transparent;
-	color: #223035;
+	color: #fbfbfb;
 	font-size: 15px;
 }
 .sidebar-menu>li>a>.fa {
 	width: 20px;
 }
 .sidebar-menu>li:hover>a, .sidebar-menu>li.active>a {
-	color: #008cff;
-    background: rgba(0, 140, 255, 0.15);
-    border-left-color: #008cff;
+	color: #212529;
+	background: #e9eaea;
+	border-left-color: #212529;
+	font-weight: bold;
 }
 .sidebar-menu>li .label, .sidebar-menu>li .badge {
 	margin-top: 3px;

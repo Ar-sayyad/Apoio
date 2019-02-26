@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.9.5.8352" ExportMode="NoUniqueID" PISystem="BKZTKDSAS32" Database="DEM" Description="Database for t he well field management" Created="2019-01-16T13:32:28.3686736Z" id="d9965c2a-1402-11e9-a9d9-507b9d67d862" ParentKey="adaaa37c-e6fa-48a7-aeeb-0848fc86bac7" ExportedObject="Zones" ExportedType="AFElement" Identity="Element" PIPersist="154 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{90c79510-6903-4194-b55c-094bc7d7e69e}\Elements[{d9965c2a-1402-11e9-a9d9-507b9d67d862}]*BKZTKDSAS32\DEM\Zones">
+  <AFElement>
+    <Name>Zones</Name>
+    <Description>Abstract template which contains common attributes for lists (should not be instanciated)</Description>
+    <Template>LIST</Template>
+    <AFAttribute>
+      <Name>NB_CHILDREN</Name>
+      <Value type="Int32">6</Value>
+    </AFAttribute>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>MCI</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>MCU</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>MSK</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK16</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK17</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK18</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK19</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK21</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK23</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK25</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK26</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK27</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK28</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK39</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK40</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK41</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSK42</AFElementRef>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>MSU</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU06</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU19</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU21</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU23</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU24</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU25</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU27</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU32</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU34</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU36</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU37</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU38</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU39</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU40</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU42</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU43</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU44</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU45</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU46</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU47</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU48</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU49</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU50</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU52</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU53</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU54</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU55</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU56</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU57</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU58</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU59</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU62</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU63</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\MSU69</AFElementRef>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>TNU</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU01</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU02</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU03</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU04</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU10</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU13</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU16</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU17</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU18</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU19</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU20</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU21</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU22</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU23</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU31</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU33</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU35</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TNU36</AFElementRef>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>TSU</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU01</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU02</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU02-bis</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU03-bis</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU05</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU11</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU12</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU13</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU14</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU15</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU16</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU17</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU18</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU19</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU27</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU28</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU30</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU31</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU32</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU33</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU34</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU35</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU36</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU37</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU39</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU41</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU42</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU44</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU45</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU46</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU50</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU51</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU52</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU53</AFElementRef>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\TSU64</AFElementRef>
+    </AFElement>
+    <AFElement ReferenceType="Parent-Child">
+      <Name>ZZZ</Name>
+      <Description>Katco deposit zone</Description>
+      <Template>ZONE</Template>
+      <AFAttribute>
+        <Name>ACID_CONCENTRATION</Name>
+        <AFAttribute>
+          <Name>ACID_CONC1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_CONC3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>ACID_MASS_ACIDIFICATION</Name>
+        <AFAttribute>
+          <Name>ACID_MASS1</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS2</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>ACID_MASS3</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>KU</Name>
+        <AFAttribute>
+          <Name>KU01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>KU27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>NAME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_TKD</Name>
+        <AFAttribute>
+          <Name>PR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>PR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>PR_VOLUME</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>TEST</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>U</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR</Name>
+        <AFAttribute>
+          <Name>VR01-26</Name>
+        </AFAttribute>
+        <AFAttribute>
+          <Name>VR27-52</Name>
+        </AFAttribute>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_DAY</Name>
+      </AFAttribute>
+      <AFAttribute>
+        <Name>VR_VOLUME</Name>
+      </AFAttribute>
+      <AFElementRef ReferenceType="Weak Reference">TUZ\ZZZ01</AFElementRef>
+    </AFElement>
+    <AFAnalysis>
+      <Name>NB_CHILDREN</Name>
+      <Template>NB_CHILDREN</Template>
+      <Status>Enabled</Status>
+      <Target>
+        <AFElementRef>.</AFElementRef>
+      </Target>
+    </AFAnalysis>
+  </AFElement>
+</AF>

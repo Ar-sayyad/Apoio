@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <title locale-id="page_title">Well Field Management Portal</title>
+    
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="kapp-wells.css" />
+
+    <script type="text/javascript" src="/js/jquery-3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/moment-2.17.1/moment.min.js"></script>
+    <script type="text/javascript" src="/js/moment-2.17.1/locales.min.js"></script>
+    <script type="text/javascript" src="/js/chartjs-2.7.3/chart.min.js"></script>
+    <script type="text/javascript" src="/js/kapp-0.1/kapp.js"></script>
+    <script type="text/javascript" src="kapp-pi.js"></script>
+    <script type="text/javascript" src="kapp-wells.js"></script>
+
+    <script type="text/javascript">
+
+      if (!(typeof(kApp.params.w_template) === 'string')) kApp.params.w_template = 'tuz';
+      if (!(typeof(kApp.params.w_asset) === 'string')) kApp.params.w_asset = 'TSU45';
+
+      $(function(){
+
+        kApp.setAlertContainer('alertContainer');
+        kApp.wells.$lstParents = $('#lstParents');
+        kApp.wells.$lstAssets = $('#lstAssets');
+        kApp.wells.$lstElements = $('#lstElements');
+        kApp.wells.$chart = $('#chart');
+
+        $('#lstTemplates').val($('#lstTemplates>option[template="' + kApp.params.w_template +'"]').html());
+        $('#lstAssets').val(kApp.params.w_asset);
+
+        $('#lstTemplates').change(function() {
+          kApp.setParam('w_template', $('#lstTemplates>option:checked').attr('template'), true);
+          kApp.wells.loadParentList(kApp.params.w_template, kApp.params.w_asset, $('#lstAssets'));
+          kApp.wells.datasets = {};
+          kApp.wells.initChart();
+        });
+
+        kApp.wells.initElementList();
+        kApp.wells.loadParentList(kApp.params.w_template, kApp.params.w_asset, $('#lstAssets'));
+        kApp.wells.initChart();
+
+      });
+
+    </script>
+  </head>
+  <body>
+
+    <div class="kLoader"><div></div></div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span><img src="/Logo_Katko.png" style="width:40px;" alt="logo" />&nbsp;&nbsp;&nbsp;<span locale-id="page_title">Katco/DEM Portal</span></span></a>
+        </div>
+        <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse"></ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid kContent">
+      
+      <div id="alertContainer"></div>
+
+      <div class="row">
+
+        <div class="col-xs-2">
+          
+          <label for="lstTemplates" locale-id="tuz_select">Select parent type:</label>
+          <select class="form-control" id="lstTemplates">
+            <option template="tuz">TUZ</option>
+            <option template="block">BLOCK</option>
+          </select>
+          
+          <label for="lstParents" locale-id="tuz_select">Select a parent:</label>
+          <select class="form-control" id="lstParents"></select>
+          
+          <label for="lstElements">Elements</label>
+          <div class="selectable-wrapper">
+            <ul id="lstElements"></ul>
+          </div>
+          
+          <label for="lstAssets">Assets</label>
+          <div class="selectable-wrapper"><ul id="lstAssets"></ul></div>
+
+        </div>
+
+        <div class="col-xs-10">
+
+          <ul id="tabNav" class="nav nav-tabs nav-justified">
+            <li class="active">
+              <a href="#tabChart" data-toggle="tab" aria-expanded="false">Charts</a>
+            </li>
+            <li>
+              <a href="#tabData" data-toggle="tab" aria-expanded="false">Data</a>
+            </li>
+          </ul>
+          
+          <div id="tabContent" class="tab-content">
+            <div id="tabChart" class="tab-pane fade in active">
+              <canvas id="chart" style="width:100%;"></canvas>
+            </div>
+            <div id="tabData" class="tab-pane fade">
+  
+            </div>
+          </div>
+
+        </div>
+      
+        
+      </div>
+    </div>
+
+    <footer class="kFooter"><span class="glyphicon glyphicon-copyright-mark"></footer>
+
+  </body>
+</html>

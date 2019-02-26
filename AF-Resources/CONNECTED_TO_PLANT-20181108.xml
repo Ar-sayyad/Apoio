@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.9.5.8352" ExportMode="NoUniqueID" PISystem="PISRV01" Database="Lab Building Data" Description="" Created="2018-11-09T00:42:03.3102007Z" id="f84839bd-38c5-41e6-8624-60d31530125a" ParentKey="4768f92f-dbfd-4ca2-b186-46124a5fd1fe" ExportedObject="CONNECTED_TO_PLANT" ExportedType="AFEnumerationSet" Identity="EnumerationSet" PIPersist="201 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{fa17c4c1-5f05-4596-9b40-a616e67313e5}\EnumerationSets[{f84839bd-38c5-41e6-8624-60d31530125a}]*PISRV01\Lab Building Data\EnumerationSets[CONNECTED_TO_PLANT]">
+  <AFEnumerationSet>
+    <Name>CONNECTED_TO_PLANT</Name>
+    <AFEnumerationValue>
+      <Name>Not connected</Name>
+      <Value>0</Value>
+      <Description>Not connected</Description>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_new</Name>
+      <Value>8</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_new + VR - MKM_new</Name>
+      <Value>72</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_new + VR - MKM_old</Name>
+      <Value>40</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_new + VR - TKD</Name>
+      <Value>24</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_old</Name>
+      <Value>4</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_old + VR - MKM_new</Name>
+      <Value>68</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_old + VR - MKM_old</Name>
+      <Value>36</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - MKM_old + VR - TKD</Name>
+      <Value>20</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - TKD</Name>
+      <Value>2</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - TKD + VR - MKM_new</Name>
+      <Value>66</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - TKD + VR - MKM_old</Name>
+      <Value>34</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>PR - TKD + VR - TKD</Name>
+      <Value>18</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>Recirculation</Name>
+      <Value>1</Value>
+      <Description>Recirculation</Description>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>VR - MKM_new</Name>
+      <Value>64</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>VR - MKM_old</Name>
+      <Value>32</Value>
+    </AFEnumerationValue>
+    <AFEnumerationValue>
+      <Name>VR - TKD</Name>
+      <Value>16</Value>
+    </AFEnumerationValue>
+  </AFEnumerationSet>
+</AF>

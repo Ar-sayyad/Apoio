@@ -1,0 +1,67 @@
+
+@import url(/js/bootstrap-3.3.7/css/bootstrap.min.css);
+@import url(/js/bootstrap-datepicker-4.17.45/css/bootstrap-datetimepicker.min.css);
+@import url(/js/jquery-ui-1.12.1/jquery-ui.min.css);
+@import url(/js/kapp-0.1/css/kapp.css);
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#kContent {
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.selectable-wrapper {
+  border-radius: 4px;
+  border: solid 1px gainsboro;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: inset 2px 2px 1px rgba(0,0,0,.1);
+  padding:5px;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+#lstElements > li, #lstAssets > li {
+  cursor:pointer;
+  margin: 1px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding:2px 2px 2px 2px;
+}
+
+#lstElements > li.ui-selected, #lstAssets > li.ui-selected {
+  background-color: lightskyblue;
+}
+
+#lstElements > li.ui-selecting, #lstAssets > li.ui-selecting {
+  background-color: lightgoldenrodyellow;
+}
+
+#lstElements > li:hover, #lstAssets > li:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+#lstAssets > li.child0 {
+  font-weight: bolder;
+}
+
+#lstAssets > li.child1 {
+  padding:2px 2px 2px 12px;
+}
+
+#lstAssets > li.child2 {
+  padding:2px 2px 2px 22px;
+  font-style: italic;
+}
+
+label {
+  margin-top:10px;
+}
+
+label:first-child {
+  margin-top:0;
+}

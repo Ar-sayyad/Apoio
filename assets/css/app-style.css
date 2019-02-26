@@ -14,10 +14,10 @@ html {
 }
 body {
 	background:#f7f7ff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: #636363;
-    letter-spacing: 1px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #636363;
+	letter-spacing: 1px;
 }
 [tabindex="-1"]:focus {
 	outline: 0!important
@@ -38,9 +38,8 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	color: #292929;
-	/* font-weight: 600; */
-	color: #223035;
+	font-weight: 600;
+	color: #f8f9fa;
 }
 .h1, h1 {
 	font-size: 48px;
@@ -192,8 +191,8 @@ hr {
 .col-xl-8,
 .col-xl-9,
 .col-xl-auto{
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 
@@ -205,7 +204,7 @@ hr {
 }
 
 #sidebar-wrapper {
-  background: #ffffff;
+  background: #212529;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -213,11 +212,11 @@ hr {
   overflow: hidden;
   width: 240px;
   height: 100%;
- -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
-  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px 0 #75808a, 0 2px 6px 0 #495057;
 }
 
 
@@ -238,11 +237,11 @@ hr {
 /* Page Content Wrapper */
 .content-wrapper {
     margin-left: 240px;
-    padding-top: 70px;
+    padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 70px;
-    overflow-x: hidden;
+    overflow-x: unset;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -251,11 +250,15 @@ hr {
   
 /* Topbar Header */   
 .topbar-nav .navbar{
-   padding: 0px 15px;
+   padding: 15px 15px;
    z-index: 999;
    height: 60px;
+   margin-left: 240px;
+   text-align: center;
+   text-transform: uppercase;
+   display: block;
    -webkit-box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 0px 6px 0 rgba(206, 206, 238, 0.54);
-   box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 0px 6px 0 rgba(206, 206, 238, 0.54);
+   box-shadow: 0 2px 6px 0 #6c757d, 0 0px 6px 0 #75808a;
 }
 
 .toggle-menu i {
@@ -376,11 +379,11 @@ hr {
 .brand-logo{
   width: 100%;
   height: 60px;
-  border-bottom: 1px solid #e9eaea;
+  border-bottom: 1px solid #ccc;
 }
 
 .logo-text{
-	color: #223035;
+	color: #fbfbfb;
 	font-size: 20px;
 	display: inline-block;
 	position: relative;
@@ -1367,6 +1370,7 @@ hr {
 
 .btn-group, .btn-group-vertical{
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+	float: left;
 }
 
 .btn-group .btn{
@@ -2103,10 +2107,10 @@ hr {
 }
 label {
     color: #212529;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -5083,7 +5087,9 @@ input[type="color"] {
 
 
 }
-
+div.dataTables_wrapper div.dataTables_filter{
+    margin-bottom: 15px;
+}
 
 
 

@@ -1,0 +1,30 @@
+{  
+ "parent": {  
+  "Method": "GET",  
+  "Resource": "https://localhost/piwebapi/elements?path=\\\\WIN-DQAHTRTV6MI\\Database1\\Zones\\TSU"  
+ }, 
+ "elements": {  
+  "Method": "GET",  
+  "Resource": 
+  "{0}?templateName=TUZ&selectedFields=Items.Name;Items.Path;&searchFullHierarchy=true",  
+  "ParentIds": [ "parent"	],
+  "Parameters": [ "$.parent.Content.Links.Elements" ]
+ }, 
+ "attributes":  {
+	"Method": "GET",
+	"RequestTemplate": {
+		"Resource": "https://localhost/piwebapi/attributes/multiple?selectedFields=Items.Object.Path;Items.Object.WebId&path={0}|U&path={0}|PH&path={0}|KU&path={0}|PR&path={0}|VR"
+	},
+	"ParentIds": [ "elements" ],
+	"Parameters": [ "$.elements.Content.Items[*].Path" ]
+ },
+ "values":  {
+	"Method": "GET",
+	"RequestTemplate": {
+		"Resource": "https://localhost/piwebapi/streams/{0}/recordedattime?time=10-jan-2019%2023:59:59Z"
+	},
+	"ParentIds": [ "attributes" ],
+	"Parameters": [ "$.attributes.Content.Items[*].Content.Items[*].Object.WebId" ]
+ }
+
+}
