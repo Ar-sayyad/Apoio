@@ -92,6 +92,11 @@
                   <i class="ti-list-ol"></i> <span>Ranking</span>
               </a>
           </li>
+          <li ng-class="{active : isSelected('BABA')}">
+              <a href="#!Baba" ng-click="setMaster('BABA')" class="waves-effect">
+                  <i class="ti-user"></i> <span>BABA</span>
+              </a>
+          </li>
     </ul>	 
    </div>    
    <!--End sidebar-wrapper-->
@@ -152,6 +157,7 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
   
   <script src="Views/Angular/chroniclesController.js" type="text/javascript"></script>
+  <script src="Views/Angular/babaController.js" type="text/javascript"></script>
   <script src="Views/Angular/rankingController.js" type="text/javascript"></script>
 </body>
 </html>
